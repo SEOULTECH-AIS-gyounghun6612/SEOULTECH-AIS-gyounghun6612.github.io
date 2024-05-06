@@ -6,7 +6,7 @@ python을 이용한 프로젝트에서 사용할 python 코드의 문서화 작�
 
 ### Naming 예시
 
-<details >
+<details open >
 <summary>접기/펼치기</summary>
 
 | 타입                 | Public                       | Internal                                   |
@@ -24,7 +24,7 @@ python을 이용한 프로젝트에서 사용할 python 코드의 문서화 작�
 
 ### Doc-string 예시
 
-<details >
+<details open >
 <summary>접기/펼치기</summary>
 
 ```python
