@@ -4,7 +4,7 @@ python을 이용한 프로젝트에서 사용할 python 코드의 문서화 작�
 
 ## python 파일(.py) 문서화
 
-### Typing 예시
+### Naming 예시
 
 <details >
 <summary>접기/펼치기</summary>
