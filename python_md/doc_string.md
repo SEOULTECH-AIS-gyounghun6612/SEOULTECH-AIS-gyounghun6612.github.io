@@ -1,23 +1,31 @@
-# Python doc-string 규칙 정리 문서
+# Python Doc-string 정리 문서
 
-python을 이용한 프로젝트에서 사용할 python 코드의 문서화 작업 규칙
+python을 이용한 프로젝트에서 사용할 python 코드의 문서화 작업관련 사항 정리 및 예시
 
 ## python 파일(.py) 문서화
 
-python 파일(.py)에 작성해야 하는 주요 doc-string으로 파일의 각 기능에 대하여 서술.
+### Typing 예시
 
-단, 해당 기능에 대한 서술 중 자료형에 대한 내용은 서술하지 않음. (해당 자료형에 관한 서술은 typing으로 처리)
+<details >
+<summary>접기/펼치기</summary>
 
-문서화 작업 대상과 그에 따른 작성내역은 아래와 같이 크게 3개로 나누어 볼 수 있음.
+| 타입                 | Public                       | Internal                                   |
+| -------------------- | ---------------------------- | ------------------------------------------ |
+| 모듈                 | `lower_with_under`           | `_lower_with_under`                        |
+| 클래스               | `CapWords`                   | `_CapWords`                                |
+| 함수                 | `Upper_in_first_with_under()`| `_Upper_in_first_with_under()`             |
+| 글로벌/클래스 상수   | `CAPS_WITH_UNDER`            | `_CAPS_WITH_UNDER`                         |
+| 인스턴스 변수        | `lower_with_under`           | `_lower_with_under` (protected)            |
+| 메서드 이름          | `Upper_in_first_with_under()`| `_Upper_in_first_with_under()` (protected) |
+| 함수/메서드 매개변수 | `lower_with_under`           |                                            |
+| 지역 변수            | `lower_with_under`           |                                            |
 
-| 구분    | doc-string 작성 내역                              |
-| ------- | ------------------------------------------------- |
-| `문서`  | `Note`, `Requirement`, `Structure`                |
-| `class` | `Note`, `Args`, `Attributes`, `Structure`, `Todo` |
-| `def`   | `Note`, `Args`, `Returns or Yields`, `Raises`     |
+</details>
 
+### Doc-string 예시
 
-### 예시
+<details >
+<summary>접기/펼치기</summary>
 
 ```python
 """ ### Module feature description
@@ -75,3 +83,5 @@ class ClassName():
     """
     ...
 ```
+
+</details>
