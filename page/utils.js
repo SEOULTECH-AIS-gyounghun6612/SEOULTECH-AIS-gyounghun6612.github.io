@@ -1,13 +1,13 @@
 /**
  * Markdown 파일을 불러와서 HTML로 변환한 후,
- * '.terminal-body' 영역에 내용을 삽입하는 함수
+ * '.terminal__body' 영역에 내용을 삽입하는 함수
  * @param {string} markdownFile - 불러올 Markdown 파일의 경로
  */
 function loadContent(markdownFile) {
-    // 1. '.terminal-body' 요소를 찾습니다.
-    const mainContent = document.querySelector('.terminal-body');
+    // 1. '.terminal__body' 요소를 찾습니다.
+    const mainContent = document.querySelector('.terminal__body');
     if (!mainContent) {
-        console.error("'.terminal-body' 요소를 찾을 수 없습니다.");
+        console.error("'.terminal__body' 요소를 찾을 수 없습니다.");
         return;
     }
 

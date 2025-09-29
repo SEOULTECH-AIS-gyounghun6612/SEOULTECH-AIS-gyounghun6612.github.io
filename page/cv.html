@@ -8,34 +8,42 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-
 </head>
 <body>
 
     <div class="terminal">
-        <header class="terminal-header">
-            <span class="prompt">gyounghun6612@Dev_Log:~$ ls</span>
+        <header class="terminal__header">
+            <span class="text-prompt">gyounghun6612@Dev_Log:</span><span class="text-dir">~</span><span class="text-command">$ ls -a ~</span>
         </header>
 
-        <nav class="terminal-nav">
-            <a href="cv.html", class="file">README.md</a>
-            <a href="../posts.html", class="dir">pcb.md</a>
-            <!-- <a href="/projects.html">projects</a> -->
-        </nav>
+        <nav class="terminal__nav">
+            <a href="../index.html" class="terminal__nav-link text-dir">.</a>
+            <a href="cv.html" class="terminal__nav-link text-file">README.md</a>
+            <!-- <a href="page/posts.html" class="terminal__nav-link text-dir">pcb</a> -->
+            </nav>
 
-        <main class="terminal-body">
+        <div class="terminal__command-log">
+            <span class="text-prompt">gyounghun6612@Dev_Log:</span><span class="text-dir">~</span><span class="text-command">$ md-render README.md</span>
+        </div>
+
+        <main class="terminal__body">
             </main>
 
-        <div class="terminal-prompt">
-            <span class="prompt">gyounghun6612@Dev_Log:~$</span>
+        <div class="terminal__input-prompt">
+            <span class="text-prompt">gyounghun6612@Dev_Log:~$</span>
         </div>
-        <footer class="terminal-footer">
+
+        <footer class="terminal__footer">
             <div class="copyright">
-                © 2025. ChoikeongHun. All rights reserved.
+                © 2025. Choi KeongHun. All rights reserved.
             </div>
-            <div class="social-links">
-                <a href="https://github.com/SEOULTECH-AIS-gyounghun6612" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://scholar.google.com/citations?user=mdt8uQMAAAAJ&hl=ko&authuser=1" target="_blank" aria-label="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+            <div class="terminal__socials">
+                <a href="https://github.com/SEOULTECH-AIS-gyounghun6612" target="_blank" aria-label="GitHub" class="terminal__social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://scholar.google.com/citations?user=mdt8uQMAAAAJ&hl=ko&authuser=1" target="_blank" aria-label="Google Scholar" class="terminal__social-link">
+                    <i class="ai ai-google-scholar"></i>
+                </a>
             </div>
         </footer>
     </div>

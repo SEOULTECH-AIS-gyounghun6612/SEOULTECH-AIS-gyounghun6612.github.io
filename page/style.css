@@ -1,4 +1,7 @@
-/* 추가: D2Coding 웹 폰트 불러오기 */
+/* ==========================================================================
+   1. 기본 및 폰트 설정
+   ========================================================================== */
+
 @font-face {
     font-family: 'D2Coding';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/D2Coding.woff') format('woff');
@@ -6,11 +9,10 @@
     font-style: normal;
 }
 
-/* 전체 페이지 스타일 */
 body {
     background-color: #1a1a1a;
     color: #f2f2f2;
-    font-family: 'D2Coding', monospace; /* 폰트 변경 */
+    font-family: 'D2Coding', monospace;
     margin: 0;
     padding: 20px;
     display: flex;
@@ -18,6 +20,10 @@ body {
     align-items: center;
     min-height: 100vh;
 }
+
+/* ==========================================================================
+   2. 터미널 레이아웃 (BEM 방법론 적용: .block__element--modifier)
+   ========================================================================== */
 
 /* 터미널 전체 컨테이너 */
 .terminal {
@@ -32,102 +38,125 @@ body {
     animation: fadeInTerminal 0.8s ease-out;
 }
 
-/* 헤더: 계정명@Dev_Log */
-.terminal-header {
-    display: flex;
-    align-items: center;
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #8AE234;
-    margin-bottom: 15px;
-}
-.terminal-header span {
-    font-weight: normal; /* 헤더 부분은 굵게 표시되지 않도록 normal 처리 */
+/* 터미널의 각 구성 요소들 */
+.terminal__header,
+.terminal__nav,
+.terminal__separator,
+.terminal__command-log,
+.terminal__body,
+.terminal__input-prompt {
+    margin-bottom: 10px; /* 일관된 수직 간격 */
 }
 
-.terminal-prompt {
-    display: flex;
-    align-items: center;
+.terminal__header {
     font-size: 1.2em;
-    color: #8AE234; /* 헤더와 동일한 녹색 */
-    margin-top: 20px; /* 위쪽 콘텐츠와의 간격 */
-}
-.terminal-prompt span {
-    font-weight: normal;
-}
-.terminal-prompt::after {
-    content: '▋';
-    display: inline-block;
-    margin-left: 8px;
-    animation: blink 1s step-end infinite; /* 깜빡이는 커서 애니메이션 */
 }
 
-/* 구분선 */
-.separator {
+.terminal__separator {
     border-bottom: 1px solid #555;
-    margin: 15px 0;
 }
 
-/* 네비게이션 메뉴 */
-.terminal-nav {
+.terminal__nav {
     display: flex;
     gap: 25px;
     font-size: 1.1em;
 }
-.terminal-nav a {
+
+.terminal__nav-link {
     text-decoration: none;
-    color: #729FCF;
     transition: background-color 0.2s, color 0.2s;
     padding: 2px 5px;
     border-radius: 3px;
 }
-/* 파일(file) 스타일 */
-.terminal-nav a.file {
-    color: #f2f2f2; /* 일반 텍스트 색상 (흰색 계열) */
-    font-weight: normal;
-}
-.terminal-nav a.file:hover {
-    background-color: #f2f2f2;
-    color: #2d2d2d;
+
+.terminal__body {
+    min-height: 100px;
 }
 
-/* 디렉토리(dir) 스타일 */
-.terminal-nav a.dir {
-    color: #729FCF; /* 디렉토리 색상 (파란색) */
-    font-weight: bold; /* 굵게 표시 */
-}
-.terminal-nav a.dir:hover {
-    background-color: #729FCF;
-    color: #2d2d2d;
+.terminal__command-log {
+    font-size: 1.2em;
 }
 
-/* 메인 바디 */
-.terminal-body {
-    min-height: 200px;
+.terminal__input-prompt {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
 }
 
-/* 푸터 */
-.terminal-footer {
+.terminal__input-prompt::after {
+    content: '▋';
+    display: inline-block;
+    margin-left: 8px;
+    animation: blink 1s step-end infinite;
+}
+
+.terminal__footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 0.9em;
     color: #888;
-    margin-top: 20px;
     padding-top: 15px;
     border-top: 1px solid #555;
+    margin-top: 20px;
 }
-.social-links a {
+
+.terminal__social-link {
     color: #888;
     margin-left: 15px;
     font-size: 1.2em;
     transition: color 0.2s;
 }
-.social-links a:hover {
+
+.terminal__social-link:hover {
     color: #f2f2f2;
 }
 
-/* Keyframes 애니메이션 정의 */
+
+/* ==========================================================================
+   3. 재사용 가능한 유틸리티(Utility) 클래스
+   ========================================================================== */
+
+/* 터미널 프롬프트 텍스트 스타일 (초록색) */
+.text-prompt {
+    color: #8AE234;
+    font-weight: normal;
+}
+
+/* 사용자 명령어 텍스트 스타일 (흰색) */
+.text-command {
+    color: #f2f2f2;
+    /* padding-left: 8px; */
+}
+
+/* 파일 이름 스타일 */
+.text-file {
+    color: #f2f2f2;
+    font-weight: normal;
+}
+
+/* 디렉토리 이름 스타일 */
+.text-dir {
+    color: #729FCF;
+    font-weight: bold;
+}
+
+/* 네비게이션 링크에 대한 hover 효과 (특정 위치에 종속) */
+.terminal__nav-link.text-file:hover {
+    background-color: #f2f2f2;
+    color: #2d2d2d;
+}
+
+.terminal__nav-link.text-dir:hover {
+    background-color: #729FCF;
+    color: #2d2d2d;
+}
+
+
+/* ==========================================================================
+   4. 애니메이션 효과
+   ========================================================================== */
+
 @keyframes fadeInTerminal {
     from {
         opacity: 0;
@@ -138,6 +167,7 @@ body {
         transform: translateY(0);
     }
 }
+
 @keyframes blink {
     50% {
         opacity: 0;
