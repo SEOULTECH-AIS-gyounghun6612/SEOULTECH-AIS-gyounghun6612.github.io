@@ -1,0 +1,99 @@
+/* 헤더 기본 스타일: 굵은 텍스트로 가독성 확보 */
+.terminal__body h1,
+.terminal__body h2,
+.terminal__body h3 {
+    font-weight: bold; /* 굵게 하여 강조 */
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+/* H1: 최상위 제목. 구분선과 프롬프트 기호로 강조 */
+.terminal__body h1 {
+    font-size: 1.5em;
+    border-bottom: 2px solid #555;
+    padding-bottom: 0.5em;
+}
+.terminal__body h1::before {
+    content: ">> ";
+}
+
+/* H2: 중간 제목. 꺽쇠 기호로 구분 */
+.terminal__body h2 {
+    font-size: 1.3em;
+}
+.terminal__body h2::before {
+    content: "> ";
+}
+
+/* H3: 하위 제목. 접두사와 들여쓰기로 계층 표현 (오류 수정) */
+.terminal__body h3 {
+    font-size: 1.1em;
+    padding-left: 1em; /* 누락되었던 들여쓰기 추가 */
+    border-bottom: none;
+}
+.terminal__body h3::before {
+    content: "# ";
+}
+
+/* --- 나머지 스타일 --- */
+
+/* 본문 텍스트를 헤더보다 약간 어둡게 하여 대비 강조 (선택 사항) */
+.terminal__body p {
+    line-height: 1.7;
+    color: #ddd; 
+}
+
+.terminal__body a {
+    color: #729FCF; /* 링크는 가독성을 위해 색상 유지 */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.terminal__body a:hover {
+    text-decoration: underline;
+}
+
+/* ... blockquote, ul, ol, hr, code, pre 스타일은 동일하게 유지 ... */
+.terminal__body blockquote {
+    border-left: 4px solid #729FCF;
+    padding-left: 1em;
+    color: #aaa;
+    margin-left: 0;
+}
+
+.terminal__body ul,
+.terminal__body ol {
+    padding-left: 2em;
+}
+
+.terminal__body li {
+    margin-bottom: 0.5em;
+}
+
+.terminal__body hr {
+    border: none;
+    border-top: 1px solid #555;
+    margin: 2em 0;
+}
+
+.terminal__body code {
+    background-color: #3a3a3a;
+    padding: .2em .4em;
+    border-radius: 3px;
+    font-size: 85%;
+}
+
+.terminal__body pre {
+    background-color: #252525;
+    padding: 16px;
+    overflow: auto;
+    border-radius: 6px;
+    border: 1px solid #444;
+}
+
+.terminal__body pre code {
+    padding: 0;
+    font-size: 100%;
+    background-color: transparent;
+    border-radius: 0;
+}
