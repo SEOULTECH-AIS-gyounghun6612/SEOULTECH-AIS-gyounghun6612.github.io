@@ -30,10 +30,6 @@
 
         <main class="terminal__body"></main>
 
-        <div class="terminal__input-prompt">
-            <span class="text-prompt">keonghun@Dev_Log:~$</span>
-        </div>
-
         <footer class="terminal__footer">
             <div class="copyright">
                 © 2025. Choi KeongHun. All rights reserved.
@@ -53,7 +49,7 @@
     <script src="../javascript/utils.js"></script>
 
     <script>
-        loadMdContent("../doc/cv.md");
+        loadMarkdownContent("../doc/cv.md", { typing: "line", speed: 100 });
     </script>
 
 </body>
