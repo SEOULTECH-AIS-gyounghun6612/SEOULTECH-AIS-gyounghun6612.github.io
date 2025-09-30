@@ -27,8 +27,8 @@
 최근 연구는 객체 검출 방법론을 심화하고, 강화학습을 통해 컴퓨터 비전의 기초적인 문제들을 해결하는 데 집중하고 있습니다.
 
 * **강화학습을 이용한 객체 검출 및 에지 검출**
-  *  `Object detection using policy-based reinforcement learning` (2023)
-  *  `An adaptive threshold for the canny edge with actor-critic algorithm` (2023)
+  * `Object detection using policy-based reinforcement learning` (2023)
+  * `An adaptive threshold for the canny edge with actor-critic algorithm` (2023)
 
 * **새로운 레이블링/방법론 기반의 객체 검출**
   * `Object Detection Method Using Image and Number of Objects on Image as Label` (2024)
