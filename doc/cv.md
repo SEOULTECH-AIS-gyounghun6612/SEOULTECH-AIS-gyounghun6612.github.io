@@ -55,22 +55,29 @@
 
 ## 연구 실적
 
+### 영문
+
+| title | author | Journal Information |
+| :--- | :--- | :--- |
+| Object Detection Method Using Image and Number of Objects on Image as Label | KH Choi, JE Ha | IEEE Access, 2024<br>(SCIE, Q1) |
+| An adaptive threshold for the canny edge with actor-critic algorithm | KH Choi, JE Ha | IEEE Access, 2023<br>(SCIE, Q1) |
+| Improved Image Classification With Token Fusion | KH Choi, JW Kim, Y Wang, JE Ha | IEEE Access, 2023<br>(SCIE, Q1) |
+| Object detection using policy-based reinforcement learning | KH Choi, JE Ha | ICCAS, 2023<br>(Scopus) |
+| Random swin transformer | KH Choi, JE Ha | ICCAS, 2022<br>(Scopus) |
+| Semantic Segmentation with Perceiver IO | KH Choi, JE Ha | ICCAS, 2022<br>(Scopus) |
+| An adaptive threshold for the canny algorithm with deep reinforcement learning | KH Choi, JE Ha | IEEE Access, 2021<br>(SCIE, Q1) |
+| Segmentation applying TAG type label data and Transformer | KH Choi, JE Ha | ICCAS, 2021<br>(Scopus) |
+| Visual surveillance transformer | KH Choi, JE Ha | ICCAS, 2021<br>(Scopus) |
+| Visual surveillance using deep reinforcement learning | KH Choi, JE Ha | ICCAS, 2020<br>(Scopus) |
+
+### 국문
+
 | 제목 | 저자 | 게재 정보 |
 | :--- | :--- | :--- |
-| Object Detection Method Using Image and Number of Objects on Image as Label | KH Choi, JE Ha | IEEE Access, 2024 (SCIE, Q1) |
-| An adaptive threshold for the canny edge with actor-critic algorithm | KH Choi, JE Ha | IEEE Access, 2023 (SCIE, Q1) |
-| Improved Image Classification With Token Fusion | KH Choi, JW Kim, Y Wang, JE Ha | IEEE Access, 2023 (SCIE, Q1) |
-| Object detection using policy-based reinforcement learning | KH Choi, JE Ha | ICCAS, 2023 (Scopus) |
-| Random swin transformer | KH Choi, JE Ha | ICCAS, 2022 (Scopus) |
-| 객체 검출과 객체 분할 방법의 무인 감시 데이터셋 적용 결과 비교<br>(Results Comparison of Applying Object Detection and Object Segmentation Methods on Visual Surveillance Dataset) | KH Choi, JE Ha | JICROS, 2022 (KCI) |
-| Semantic Segmentation with Perceiver IO | KH Choi, JE Ha | ICCAS, 2022 (Scopus) |
-| An adaptive threshold for the canny algorithm with deep reinforcement learning | KH Choi, JE Ha | IEEE Access, 2021 (SCIE, Q1) |
-| 무인 감시 Transformer<br>(Visual surveillance transformer) | KH Choi, JE Ha | JICROS, 2021 (KCI) |
-| 태그 라벨과 트랜스포머를 이용한 시맨틱 분할<br>(Semantic segmentation using TAG label and transformer) | KH Choi, JE Ha | JICROS, 2021 (KCI) |
-| Segmentation applying TAG type label data and Transformer | KH Choi, JE Ha | ICCAS, 2021 (Scopus) |
-| Visual surveillance transformer | KH Choi, JE Ha | ICCAS, 2021 (Scopus) |
-| CNN 을 이용한 태양전지 불량 검출<br>(Defect detection of solar panel using CNN) | KH Choi, JE Ha | JICROS, 2020 (KCI) |
+| 객체 검출과 객체 분할 방법의 무인 감시 데이터셋 적용 결과 비교<br>(Results Comparison of Applying Object Detection and Object Segmentation Methods on Visual Surveillance Dataset) | 최경훈, 하종은 | JICROS, 2022 (KCI) |
+| 무인 감시 Transformer<br>(Visual surveillance transformer) | 최경훈, 하종은 | JICROS, 2021 (KCI) |
+| 태그 라벨과 트랜스포머를 이용한 시맨틱 분할<br>(Semantic segmentation using TAG label and transformer) | 최경훈, 하종은 | JICROS, 2021 (KCI) |
+| CNN 을 이용한 태양전지 불량 검출<br>(Defect detection of solar panel using CNN) | 최경훈, 하종은 | JICROS, 2020 (KCI) |
 | 주행 이미지의 왜곡에 따른 Semantic segmentation 변화 | 최경훈, 하종은 | KACC, 2020 (Domestic Conference) |
-| 에지 비용 함수를 이용한 시맨틱 분할<br>(Semantic segmentation using edge loss) | KH Choi, JE Ha | JICROS, 2020 (KCI) |
-| Visual surveillance using deep reinforcement learning | KH Choi, JE Ha | ICCAS, 2020 (Scopus) |
-| 에지 분류 CNN 을 이용한 U-Net 기반 에지 검출<br>(Edge detection based-on U-Net using edge classification CNN) | KH Choi, JE Ha | JICROS, 2019 (KCI) |
+| 에지 비용 함수를 이용한 시맨틱 분할<br>(Semantic segmentation using edge loss) | 최경훈, 하종은 | JICROS, 2020 (KCI) |
+| 에지 분류 CNN 을 이용한 U-Net 기반 에지 검출<br>(Edge detection based-on U-Net using edge classification CNN) | 최경훈, 하종은 | JICROS, 2019 (KCI) |
