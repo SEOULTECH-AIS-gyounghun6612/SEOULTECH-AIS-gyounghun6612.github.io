@@ -35,7 +35,7 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     padding: 25px;
     box-sizing: border-box;
-    animation: fadeInTerminal 0.8s ease-out;
+    /* animation: fadeInTerminal 0.8s ease-out; */
 }
 
 /* 터미널의 각 구성 요소들 */
@@ -45,7 +45,7 @@ body {
 .terminal__command-log,
 .terminal__body,
 .terminal__input-prompt {
-    margin-bottom: 10px; /* 일관된 수직 간격 */
+    margin-bottom: 3px; /* 일관된 수직 간격 */
 }
 
 .terminal__header {

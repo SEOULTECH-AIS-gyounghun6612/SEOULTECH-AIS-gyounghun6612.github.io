@@ -3,7 +3,7 @@
 .terminal__body h2,
 .terminal__body h3 {
     font-weight: bold; /* 굵게 하여 강조 */
-    margin-top: 2em;
+    margin-top: 0em;
     margin-bottom: 1em;
 }
 
@@ -33,6 +33,15 @@
 }
 .terminal__body h3::before {
     content: "# ";
+}
+
+/* H3 아래 콘텐츠 들여쓰기 추가 */
+.terminal__body h3 ~ p,
+.terminal__body h3 ~ ul,
+.terminal__body h3 ~ ol,
+.terminal__body h3 ~ blockquote,
+.terminal__body h3 ~ pre {
+    margin-left: 1em;
 }
 
 /* --- 나머지 스타일 --- */
@@ -96,4 +105,8 @@
     font-size: 100%;
     background-color: transparent;
     border-radius: 0;
+}
+.terminal__body table {
+    margin-left: auto;
+    margin-right: auto;
 }
