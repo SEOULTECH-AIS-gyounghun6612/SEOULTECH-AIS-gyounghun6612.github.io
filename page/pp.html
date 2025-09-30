@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev_Log</title>
+    <link rel="stylesheet" href="../css/style_base.css">
+    <link rel="stylesheet" href="../css/style_markdown.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+</head>
+<body>
+
+    <div class="terminal">
+        <header class="terminal__header">
+            <span class="text-prompt">keonghun@Dev_Log:</span><span class="text-dir">~</span><span class="text-command">$ ls ~</span>
+        </header>
+
+        <nav class="terminal__nav">
+            <a href="../index.html" class="terminal__nav-link text-file">README.md</a>
+            <a href="cv.html" class="terminal__nav-link text-file">CV.md</a>
+            <a href="pcb.html" class="terminal__nav-link text-file">Personal_CookBook.md</a>
+            <a href="pp.html" class="terminal__nav-link text-file">Paper_n_Project.md</a>
+            </nav>
+
+        <div class="terminal__command-log">
+            <span class="text-prompt">keonghun@Dev_Log:</span><span class="text-dir">~</span><span class="text-command">$ md-render CV.md</span>
+        </div>
+
+        <main class="terminal__body">
+            </main>
+
+        <div class="terminal__input-prompt">
+            <span class="text-prompt">keonghun@Dev_Log:~$</span>
+        </div>
+
+        <footer class="terminal__footer">
+            <div class="copyright">
+                © 2025. Choi KeongHun. All rights reserved.
+            </div>
+            <div class="terminal__socials">
+                <a href="https://github.com/SEOULTECH-AIS-gyounghun6612" target="_blank" aria-label="GitHub" class="terminal__social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://scholar.google.com/citations?user=mdt8uQMAAAAJ&hl=ko" target="_blank" aria-label="Google Scholar" class="terminal__social-link">
+                    <i class="ai ai-google-scholar"></i>
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="../javascript/utils.js"></script>
+
+    <script>
+        showAccessError("/home/keonghun/doc/Paper_n_Project.md");
+    </script>
+
+</body>
+</html>
